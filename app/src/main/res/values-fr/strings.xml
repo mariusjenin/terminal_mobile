@@ -1,0 +1,98 @@
+<resources>
+
+    <string name="home_menu_item_title">Accueil</string>
+    <string name="disconnect_menu_item_title">Déconnexion</string>
+
+    <string name="sign_up_title">Inscription</string>
+    <string name="sign_in_title">Connexion</string>
+
+    <string name="hint_email_identification">Email</string>
+    <string name="hint_pwd_identification">Mot de passe</string>
+    <string name="hint_pwd_confirm_sign_up">Confirmez votre mot de passe</string>
+
+
+
+    <string name="sign_in_submit">Se connecter</string>
+    <string name="sign_up_submit">S\'inscrire</string>
+
+    <string name="toggle_identification_from_signup">Vous possédez déjà un compte ?</string>
+    <string name="toggle_identification_from_signin">Vous ne possédez pas de compte ?</string>
+
+    <string name="stay_connected_identification">Rester connecté ?</string>
+
+    <string name="error_recuperation_data_on_server">Difficultés rencontrées pour récupérer des données sur le serveur</string>
+    <string name="error_access_server">Difficultés rencontrées lors de l\'accès au serveur</string>
+
+    <string name="home_see_itineraris">Voir tous les itinéraires desservis</string>
+
+    <string name="future_trips_title">Trajets à venir</string>
+    <string name="future_trips_no_result">Pas de trajets à venir</string>
+
+    <string name="title_marker_position_home">Votre position</string>
+    <string name="descr_marker_position_home">Vous êtes ici</string>
+
+    <string name="itineraries_title">Itinéraires</string>
+    <string name="itineraries_no_result">Pas de d\'itinéraires desservis</string>
+
+    <string name="toggle_expand">Développer</string>
+
+    <string name="table_itinerary_stops_title">Arrêts</string>
+    <string name="table_itinerary_workdays_title">Du L au V</string>
+    <string name="table_itinerary_weekend_title">Weekend</string>
+    <string name="no_trips_for_itinerary">Pas de trajets prévus pour cet itinéraire</string>
+
+    <string name="to_my_position_descr_reservation">Venir me chercher à ma position actuelle</string>
+    <string name="choose_date_descr_reservation">Choisir la date de votre réservation</string>
+    <string name="share_trip_descr_reservation">Ne pas partager le trajet avec d\'autres utilisateur</string>
+    <string name="nb_place_descr_reservation">Places à réserver</string>
+    <string name="start_stop_descr_reservation">Arrêt de départ</string>
+    <string name="hour_trip_descr_reservation">Heure de départ</string>
+    <string name="end_stop_descr_reservation">Arrêt d\'arrivée</string>
+    <string name="submit_reservation">Valider la réservation</string>
+    <string name="from_here_position_reservation">Vous partirez d\'ici</string>
+    <string name="to_here_position_reservation">Vous arriverez ici</string>
+
+    <string name="your_position">votre position</string>
+
+    <string name="too_far_from_reservation">Vous êtes trop loin de cet itinéraire pour réserver depuis votre position</string>
+
+    <string name="title_msg_passenger_trip">Votre trajet réservé</string>
+
+    <string name="now">maintenant</string>
+
+    <string name="cancel">Annuler\nla réservation</string>
+
+    <string name="no_passengers">Pas de passagers à récupérer en dehors des arrêts</string>
+
+
+    <string name="hour_singular">heure</string>
+    <string name="hour_plural">heures</string>
+    <string name="min_singular">minute</string>
+    <string name="min_plural">minutes</string>
+    <string name="your_trip_of">Votre voyage du</string>
+    <string name="will_last">durera</string>
+    <string name="from">à partir de</string>
+    <string name="at">à</string>
+    <string name="up_to">jusqu\'à</string>
+
+    <string name="hour_format">H\'h\'m</string>
+    <string name="time_format">H\'h\'m\'min\'</string>
+    <string name="time_format_hour">H\'h\'</string>
+    <string name="time_format_min">m\'min\'</string>
+
+    <string name="about">À environ</string>
+    <string name="from_you">de vous</string>
+    <string name="to_your_position">À votre position</string>
+
+    <string name="place_singular">place</string>
+    <string name="place_plural">places</string>
+
+    <string name="shared_trip">D\'autres personnes pourront participer à ce même trajet</string>
+    <string name="not_shared_trip">Vous ne partagerez pas votre trajet avec d\'autres personnes</string>
+
+    <string name="you_are_at">Vous êtes à</string>
+    <string name="meter_of_the_itinerary">m de l\'itinéraire</string>
+
+
+    <string name="error_no_internet_connection">Pas de connexion internet impossible d\'accéder au serveur</string>
+</resources>

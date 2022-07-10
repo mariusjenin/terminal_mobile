@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home_menu_item_title" android:id="@+id/home_menu_item"/>
+    <item android:id="@+id/itineraries_menu_item" android:title="@string/itineraries_menu_item_title"/>
+    <item android:title="@string/future_trips_menu_item_title" android:id="@+id/future_trips_menu_item"/>
+    <item android:title="@string/disconnect_menu_item_title" android:id="@+id/disconnect_menu_item"/>
+</menu>

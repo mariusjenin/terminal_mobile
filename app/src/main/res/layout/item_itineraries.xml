@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content" android:padding="3dp"
+                                                   android:elevation="2dp"
+                                                   android:background="@drawable/background_white_element_radius"
+                                                   android:layout_marginLeft="3dp" android:layout_marginRight="3dp"
+                                                   android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
+>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:weightSum="100" android:id="@+id/linearLayout"
+            android:showDividers="middle|beginning|end|none">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/title_itinerary_item"
+                android:layout_weight="100" android:elevation="5dp"
+                android:paddingLeft="10dp" android:paddingRight="10dp"
+                android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp" android:textAllCaps="false" android:textSize="18sp"
+                android:textColor="@color/black" android:gravity="center_vertical"/>
+
+        <ImageButton
+                android:id="@+id/reserve_trip_itinerary_item"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_white"
+                android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" android:elevation="3dp"
+                android:src="@drawable/arrow_entering_into_square"
+                android:scaleType="fitCenter" android:rotationX="0" android:rotationY="0" android:padding="14dp"
+                android:contentDescription="@string/toggle_expand" android:layout_weight="1"/>
+        <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp" android:id="@+id/toggle_view_expanded_itinary"
+                android:background="@drawable/button_white"
+                android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" android:elevation="3dp" android:src="@drawable/triangle"
+                android:scaleType="fitCenter" android:rotationX="0" android:rotationY="0" android:padding="1px"
+                android:contentDescription="@string/toggle_expand" android:layout_weight="1"/>
+    </LinearLayout>
+    <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scrollbars="horizontal" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal" android:layout_marginTop="5dp" android:layout_marginRight="5dp"
+                      android:layout_marginBottom="5dp" android:layout_marginLeft="5dp"
+                      android:id="@+id/layout_table_itinerary">
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/horizontal_black_divider_linear_layout"
+                    android:showDividers="middle"
+                    android:id="@+id/table_itinerary"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:dividerPadding="0dp"
+            >
+
+                <!--                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"-->
+                <!--                          android:divider="@drawable/vertical_black_divider_linear_layout"-->
+                <!--                          android:showDividers="middle" android:layerType="none">-->
+                <!--                    <TextView-->
+                <!--                            android:text="Arrêts"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:textStyle="bold" android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="Du L au V"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:textStyle="bold" android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="Weekend"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView"-->
+                <!--                            android:textColor="#000000" android:textStyle="bold" android:layout_span="2"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="30/06/21"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:textStyle="bold" android:layout_span="1" android:id="@+id/textView15"/>-->
+                <!--                </TableRow>-->
+                <!--                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"-->
+                <!--                          android:showDividers="middle"-->
+                <!--                          android:divider="@drawable/vertical_black_divider_linear_layout">-->
+                <!--                    <TextView-->
+                <!--                            android:text="Pekin"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView2"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView11"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView16"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                </TableRow>-->
+                <!--                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"-->
+                <!--                          android:showDividers="middle"-->
+                <!--                          android:divider="@drawable/vertical_black_divider_linear_layout">-->
+                <!--                    <TextView-->
+                <!--                            android:text="Montpellier"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView3"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView9"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView17"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                </TableRow>-->
+                <!--                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"-->
+                <!--                          android:showDividers="middle"-->
+                <!--                          android:divider="@drawable/vertical_black_divider_linear_layout">-->
+                <!--                    <TextView-->
+                <!--                            android:text="Paris"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:textColor="#000000"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView5"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView12"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                    <TextView-->
+                <!--                            android:text="14h00"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:textAlignment="center" android:paddingTop="2dp" android:paddingBottom="2dp"-->
+                <!--                            android:paddingLeft="2dp" android:paddingRight="2dp" android:id="@+id/textView18"-->
+                <!--                            android:layout_span="1"/>-->
+                <!--                </TableRow>-->
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

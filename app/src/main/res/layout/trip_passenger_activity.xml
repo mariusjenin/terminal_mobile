@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".operational.HomeActivity"
+        android:fitsSystemWindows="true" android:fadeScrollbars="true">
+
+    <Button
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/button_white_element_radius_bottom_right" android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="15dp" android:paddingTop="10dp"
+            android:paddingBottom="10dp" android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:paddingEnd="15dp"
+            android:id="@+id/cancel_trip_passenger"/>
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_white_element_radius_bottom_right"-->
+<!--            android:elevation="4dp"-->
+<!--            android:visibility="visible" android:id="@+id/const_layout_left_notch_trip_passenger"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">-->
+<!--        <TextView-->
+<!--                android:text="@string/cancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" android:id="@+id/textView"-->
+<!--                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginStart="10dp" android:gravity="center"/>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_white_element_radius_bottom_left"
+            android:elevation="4dp" android:id="@+id/const_layout_right_notch_trip_passenger"
+            android:visibility="visible">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_white_element_radius"
+                android:elevation="4dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="5dp" android:weightSum="3" android:gravity="center">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_1_notch_trip_passenger" android:layout_weight="1"
+                    android:layout_margin="10dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/msg_notch_trip_passenger"
+                    android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:gravity="center"
+                    android:layout_gravity="center"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_2_notch_trip_passenger" android:layout_weight="1"
+                    android:layout_margin="10dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map_trip_passenger"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:context=".operational.HomeActivity"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="0dp" app:layout_constraintBottom_toBottomOf="parent">
+    </androidx.fragment.app.FragmentContainerView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" style="@style/BackgroundWhiteElement"
+            android:padding="3dp"
+            android:elevation="2dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="4dp"
+            android:id="@+id/const_layout_details_trip_passenger">
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:background="@drawable/background_dark_blue_element_radius_bottom"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:visibility="visible" android:clickable="true" android:focusable="true"
+                android:focusableInTouchMode="false" android:id="@+id/title_trip_passenger" android:minWidth="0dp"
+                android:minHeight="0dp" android:textColor="@color/white" android:elevation="2dp"
+                android:textAlignment="center" android:gravity="center"
+                android:foregroundGravity="center_vertical|center|center_horizontal"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:layout_editor_absoluteX="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/title_trip_passenger"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/msg_trip_passenger"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:textColor="@color/black"
+                    android:textAlignment="center"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

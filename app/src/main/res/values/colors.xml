@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    public static final int COLOR_BLACK = 0xFF000000;
+    public static final int COLOR_WHITE = 0xFFFFFFFF;
+    public static final int COLOR_GREY = 0xFF888888;
+    public static final int COLOR_BLUE = 0xFF5869FF;
+    public static final int COLOR_GREEN = 0xFF00d447;
+    public static final int COLOR_RED = 0xFFFF4141;-->
+    <color name="darkedBlue">#30306C</color>
+    <color name="mainBlue">#3C3C75</color>
+    <color name="lightBlue">#8982C2</color>
+    <color name="vibrantBlue">#5869FF</color>
+    <color name="mainOrange">#FF715F</color>
+    <color name="darkOrange">#C76456</color>
+    <color name="lightOrange">#FFA68E</color>
+    <color name="lighterOrange">#FFCFC3</color>
+    <color name="grey">#555555</color>
+    <color name="lightGrey">#959595</color>
+    <color name="lighterGrey">#D3D3D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="violet">#9500FF</color>
+    <color name="red">#FF4141</color>
+    <color name="green">#00d447</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="ic_launcher_background">#ffffff</color>
+
+
+    <color name="colorPrimary">@color/mainBlue</color>
+    <color name="colorPrimaryDark">@color/darkedBlue</color>
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+
+    <color name="gradient_1">@color/darkOrange</color>
+    <color name="gradient_2">@color/mainBlue</color>
+</resources>
